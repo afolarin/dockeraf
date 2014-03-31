@@ -1,0 +1,25 @@
+# This is a test docker file just to get used to creating containers
+# Author: Amos Folarin
+# email: amosfolarin@gmail.com
+
+# docker commands in bold
+
+#build from latest ubuntu image
+FROM ubuntu
+
+#maintainer
+MAINTAINER Amos Folarin amosfolarin@gmail.com
+
+#echo hello world
+RUN echo "HELLO WORLD"
+
+#let's look at the sources list
+RUN cat /etc/apt/sources.list
+
+# check repo is uptodate
+sudo apt-get update
+
+#install something
+#RUN sudo apt-get xxxxx
+
+
