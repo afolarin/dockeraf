@@ -1,0 +1,5 @@
+# Author: Amos Folarin
+# Some Dockerfiles for playing around with.
+# buildem, e.g.
+#>  cat ../ubuntu_ssh | sudo docker build --tag="afolarin/ssh:sshbox" -
+
