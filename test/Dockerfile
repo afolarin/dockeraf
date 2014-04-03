@@ -29,7 +29,7 @@ CMD    /usr/sbin/sshd -D
 
 # Example Usage:
 # 1. create image
-# docker build --tag="afolarin/ubuntu_ssh:v1.1" .
+# cat ../ubuntu_ssh | sudo docker build --tag="afolarin/ssh:sshbox" -
 # 2. run the container
 # docker run -d --name box1 afolarin/ubuntu_ssh:v1.1
 # 3. inspect the interface ip of the container
