@@ -27,4 +27,12 @@ RUN echo 'root:theprestige' |chpasswd
 EXPOSE 22
 CMD    /usr/sbin/sshd -D
 
-
+# Example Usage:
+# 1. create image
+# docker build --tag="afolarin/ubuntu_ssh:v1.1" .
+# 2. run the container
+# docker run -d --name box1 afolarin/ubuntu_ssh:v1.1
+# 3. inspect the interface ip of the container
+# ip_box1=$(sudo docker inspect box1 | grep '"IPAddress":' | awk -F'"' '{print $4}')
+# ssh root@${ip_box1}
+# password "theprestige"
